@@ -4,14 +4,14 @@
    ========================================================================== */
 
 :root {
-  /* ---- Brand color palette (from wireframe: gold, taupe/mocha, ink) ---- */
-  --color-primary: #6f6259;         /* taupe / mocha - nav pills, footer */
+  /* ---- Brand color palette (sampled from the real exported logo/nav assets) ---- */
+  --color-primary: #756a66;         /* taupe / mocha - matches logo-mocha.svg, nav pills, footer */
   --color-primary-dark: #4a3f38;    /* deep mocha */
   --color-primary-light: #a89c92;
   --color-secondary: #2a2622;       /* near-black warm ink */
-  --color-accent: #c99a3e;          /* mustard gold */
-  --color-accent-dark: #a97f2c;
-  --color-accent-light: #e7c877;
+  --color-accent: #d9a641;          /* gold - matches nav-circle-accent.svg */
+  --color-accent-dark: #b38530;
+  --color-accent-light: #e6b23a;    /* matches the logo's dot accent */
 
   --color-success: #3f8a5c;
   --color-warning: #d9a441;
@@ -33,7 +33,7 @@
 
   /* ---- Typography ---- */
   --font-primary: 'Playfair Display', 'Georgia', serif;   /* headings */
-  --font-secondary: 'Poppins', 'Segoe UI', sans-serif;     /* body / UI */
+  --font-secondary: 'Lora', 'Georgia', serif;              /* body / UI - matches the reference design's editorial serif */
 
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;

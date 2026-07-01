@@ -15,7 +15,7 @@
         'The Mojo Republic is a full-service communications agency blending PR, social, content, digital, and experiential craft into work that actually moves people.',
       url: 'https://www.themojorepublic.com.my',
       locale: 'en_MY',
-      themeColor: '#c99a3e',
+      themeColor: '#d9a641',
     },
 
     company: {
@@ -51,13 +51,20 @@
 
     images: {
       favicon: 'assets/images/favicon.svg',
-      logoMark: 'assets/images/logo-mark.svg',
-      logoMarkInverse: 'assets/images/logo-mark-inverse.svg',
+      logoMark: 'assets/images/logo-mocha.svg',
+      logoMarkInverse: 'assets/images/logo-footer.svg',
+      logoWhite: 'assets/images/logo-white.svg',
+      heroPhoto: 'assets/images/hero-photo.png',
       hero: 'assets/images/hero-banner.svg',
       about: 'assets/images/about-banner.svg',
       services: 'assets/images/services-banner.svg',
       careers: 'assets/images/careers-banner.svg',
       team: 'assets/images/team-portrait.svg',
+      navCircleBlank: 'assets/images/nav-circle-blank.svg',
+      navCircleAccent: 'assets/images/nav-circle-accent.svg',
+      fourCircleSet: 'assets/images/four-circle-set.svg',
+      awardLargeCircle: 'assets/images/award-large-circle.svg',
+      awardSmallCircle: 'assets/images/award-small-circle.svg',
       caseStudies: [
         'assets/images/case-study-1.svg',
         'assets/images/case-study-2.svg',
@@ -72,12 +79,14 @@
       quote: 'assets/icons/quote.svg',
       check: 'assets/icons/check.svg',
       briefcase: 'assets/icons/briefcase.svg',
+      facebook: 'assets/icons/facebook.svg',
+      whatsapp: 'assets/icons/whatsapp.svg',
     },
 
     theme: {
-      primary: '#6f6259',
+      primary: '#756a66',
       secondary: '#2a2622',
-      accent: '#c99a3e',
+      accent: '#d9a641',
       success: '#3f8a5c',
       warning: '#d9a441',
       danger: '#c1453d',
