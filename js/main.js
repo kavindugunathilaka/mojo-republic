@@ -10,35 +10,6 @@
   const escapeHtml = (str = '') =>
     str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-  function renderStats(stats) {
-    const mount = $('[data-render="stats"]');
-    if (!mount || !stats) return;
-    mount.innerHTML = stats
-      .map(
-        (s) => `
-      <div class="stat" data-reveal>
-        <div class="stat__value" data-counter="${s.value}" data-counter-suffix="${s.suffix || ''}">0${s.suffix || ''}</div>
-        <div class="stat__label">${escapeHtml(s.label)}</div>
-      </div>`
-      )
-      .join('');
-  }
-
-  function renderServices(services, opts = {}) {
-    const mount = $('[data-render="services"]');
-    if (!mount || !services) return;
-    const limit = opts.limit || services.length;
-    mount.innerHTML = services
-      .slice(0, limit)
-      .map(
-        (s) => `
-      <a class="service-orb" href="services.html#${s.id}" data-reveal="scale">
-        <span class="service-orb__title">${escapeHtml(s.title)}</span>
-      </a>`
-      )
-      .join('');
-  }
-
   function renderServiceCards(services) {
     const mount = $('[data-render="service-cards"]');
     if (!mount || !services) return;
@@ -88,32 +59,6 @@
       .join('');
     Mojo.Carousel.init($('[data-carousel="case-studies"]'));
     Mojo.LazyImages.init();
-  }
-
-  function renderTestimonials(testimonials) {
-    const mount = $('[data-render="testimonials"]');
-    if (!mount || !testimonials) return;
-    mount.innerHTML = testimonials
-      .map(
-        (t) => `
-      <blockquote class="testimonial" data-reveal>
-        <p class="testimonial__quote">&ldquo;${escapeHtml(t.quote)}&rdquo;</p>
-        <footer class="testimonial__author">
-          <div class="testimonial__avatar" aria-hidden="true"></div>
-          <div>
-            <div class="testimonial__name">${escapeHtml(t.name)}</div>
-            <div class="testimonial__role">${escapeHtml(t.role)}</div>
-          </div>
-        </footer>
-      </blockquote>`
-      )
-      .join('');
-  }
-
-  function renderFaq(faq) {
-    const mount = $('[data-render="faq"]');
-    if (!mount || !faq) return;
-    Mojo.Faq.render(faq, mount);
   }
 
   function renderAwards(awards) {
@@ -237,17 +182,10 @@
 
     Mojo.getContent().then((content) => {
       switch (page) {
-        case 'home':
-          renderStats(content.stats);
-          renderServices(content.services, { limit: 6 });
-          renderTestimonials(content.testimonials);
-          break;
         case 'about':
           renderAwards(content.awards);
-          renderStats(content.stats);
           break;
         case 'services':
-          renderServices(content.services);
           renderServiceCards(content.services);
           break;
         case 'clients':
@@ -258,7 +196,6 @@
           renderTeam(content.team);
           break;
         case 'contact':
-          renderFaq(content.faq);
           renderJobPills(content.jobs);
           break;
         case 'careers':
@@ -276,7 +213,6 @@
 
     if (global.Mojo.Forms) {
       Mojo.Forms.initContactForm('[data-form="contact"]');
-      Mojo.Forms.initNewsletterForm('[data-form="newsletter"]');
     }
   });
 })(window);
