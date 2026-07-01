@@ -45,13 +45,9 @@
     mount.innerHTML = services
       .map(
         (s) => `
-      <article class="card" id="${s.id}" data-reveal>
-        <div class="card__icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
-        </div>
-        <h3 class="card__title">${escapeHtml(s.title)}</h3>
-        <p class="card__text">${escapeHtml(s.description)}</p>
-      </article>`
+      <div class="service-orb service-orb--lg" id="${s.id}" data-reveal="scale">
+        <span class="service-orb__title">${escapeHtml(s.title)}</span>
+      </div>`
       )
       .join('');
   }
@@ -123,15 +119,15 @@
   function renderAwards(awards) {
     const mount = $('[data-render="awards"]');
     if (!mount || !awards) return;
+    const featuredIndex = Math.floor(awards.length / 2);
     mount.innerHTML = awards
       .map(
-        (a) => `
-      <div class="card" data-reveal="scale">
-        <div class="card__icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.5 13 7 22l5-3 5 3-1.5-9"/></svg>
+        (a, i) => `
+      <div class="award-circle${i === featuredIndex ? ' award-circle--large' : ''}" data-reveal="scale">
+        <div>
+          <strong>${escapeHtml(a.title)}</strong>
+          <span>${escapeHtml(a.issuer)} &middot; ${escapeHtml(a.year)}</span>
         </div>
-        <h3 class="card__title">${escapeHtml(a.title)}</h3>
-        <p class="card__text">${escapeHtml(a.issuer)} &middot; ${escapeHtml(a.year)}</p>
       </div>`
       )
       .join('');

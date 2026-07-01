@@ -566,6 +566,95 @@
   color: var(--color-secondary);
 }
 
+.service-orb--lg {
+  padding: var(--space-7);
+}
+
+.service-orb--lg .service-orb__title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+}
+
+/* Award "circle wall" — small circles flanking one large circle */
+.award-wall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.award-circle {
+  flex: 0 0 auto;
+  width: clamp(96px, 11vw, 150px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--color-bg-muted);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-3);
+  font-family: var(--font-secondary);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-snug);
+  transition: transform var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out), color var(--dur-base) var(--ease-out);
+}
+
+.award-circle:hover {
+  background: var(--color-accent);
+  color: var(--color-secondary);
+  transform: translateY(-4px);
+}
+
+.award-circle--large {
+  width: clamp(170px, 20vw, 280px);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-secondary);
+}
+
+.award-circle strong {
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.award-circle span {
+  opacity: 0.75;
+  font-size: 0.85em;
+}
+
+/* Glowing halo ring behind a portrait (Our People) */
+.team-photo-glow {
+  position: relative;
+}
+
+.team-photo-glow::before {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  border-radius: 50%;
+  background: radial-gradient(circle, transparent 54%, var(--color-accent) 58%, transparent 64%);
+  filter: blur(20px);
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.team-photo-glow img {
+  position: relative;
+  z-index: 1;
+}
+
+/* Decorative 4-circle cluster (real exported asset), bleeding off the edge */
+.decor-four-circles {
+  position: absolute;
+  width: clamp(44px, 4.5vw, 76px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.9;
+}
+
 /* Stat counter */
 .stat {
   text-align: center;
