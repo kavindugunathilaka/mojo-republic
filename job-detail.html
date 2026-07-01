@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Opening | The Mojo Republic</title>
+  <meta name="description" content="View this open role at The Mojo Republic and apply today." />
+  <meta name="theme-color" content="#c99a3e" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="job-detail">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div data-component="navbar"></div>
+
+  <main id="main">
+    <header class="page-header">
+      <div class="container" data-reveal>
+        <img class="navbar__logo-mark" src="assets/images/logo-mark.svg" alt="" width="88" height="32" style="margin-bottom:var(--space-6);" />
+        <a class="btn btn--outline" href="careers.html" style="padding:0.6rem 1.4rem;font-size:var(--fs-xs);">&larr; Back to all roles</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container grid grid-2 grid-sidebar" style="gap: var(--space-9); align-items: start;">
+        <article data-render="job-detail" data-reveal></article>
+
+        <aside class="card" style="position:sticky;top:calc(var(--nav-height) + var(--space-6));" data-reveal>
+          <h3 class="card__title">Ready to apply?</h3>
+          <p class="card__text" style="margin-bottom:var(--space-5);">
+            Send your CV and portfolio through our contact form and select "Careers" as the subject.
+          </p>
+          <a class="btn btn--primary btn--block" href="contact.html">Apply for this role</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div data-component="footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/content-data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

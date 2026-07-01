@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clients & Case Studies | The Mojo Republic</title>
+  <meta name="description" content="We partner with brands that value substance and silence over noise and clutter. Explore the case studies behind our integrated campaigns." />
+  <meta name="theme-color" content="#c99a3e" />
+  <link rel="canonical" href="https://www.themojorepublic.com.my/clients.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="clients">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div data-component="navbar"></div>
+
+  <main id="main">
+    <header class="page-header text-center">
+      <div class="container" data-reveal>
+        <p class="section-eyebrow">Trusted by</p>
+        <h1 class="page-header__title mx-auto">Our clients</h1>
+        <p class="page-header__lede mx-auto">We partner with brands that value substance and silence over noise and clutter.</p>
+      </div>
+    </header>
+
+    <section class="section section--sm">
+      <div class="container">
+        <div class="grid grid-6" data-render="clients" data-reveal-stagger></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-eyebrow">Selected work</p>
+          <h2>Case studies</h2>
+        </div>
+        <div class="carousel" data-carousel="case-studies">
+          <div class="carousel__viewport">
+            <div class="carousel__track" data-carousel-track data-render="case-studies"></div>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__btn" type="button" data-carousel-prev aria-label="Previous case study">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <span class="carousel__status" data-carousel-status aria-live="polite">1 / 3</span>
+            <button class="carousel__btn" type="button" data-carousel-next aria-label="Next case study">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container text-center" data-reveal>
+        <h2 style="color:var(--color-text-inverse);font-size:var(--fs-2xl);margin-bottom:var(--space-5);">Want results like these?</h2>
+        <a class="btn btn--accent" href="contact.html">Start your case study</a>
+      </div>
+    </section>
+  </main>
+
+  <div data-component="footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/content-data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

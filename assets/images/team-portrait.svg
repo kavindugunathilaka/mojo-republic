@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="teamPortraitTitle">
+  <title id="teamPortraitTitle">Managing Director portrait, placeholder</title>
+  <rect width="800" height="1000" fill="#2a2622"/>
+  <circle cx="400" cy="500" r="230" fill="none" stroke="#c99a3e" stroke-width="10" opacity="0.9"/>
+  <circle cx="400" cy="500" r="230" fill="none" stroke="#e7c877" stroke-width="2" opacity="0.5"/>
+  <g fill="#8b7f75">
+    <circle cx="400" cy="410" r="110"/>
+    <path d="M240 900 C240 680 300 560 400 560 C500 560 560 680 560 900 Z"/>
+  </g>
+  <path d="M240 900 C240 680 300 560 400 560 C500 560 560 680 560 900 Z" fill="#c99a3e" opacity="0.18"/>
+  <text x="400" y="960" text-anchor="middle" font-family="Poppins, sans-serif" font-size="18" fill="#a89c92">Leadership headshot — placeholder</text>
+</svg>

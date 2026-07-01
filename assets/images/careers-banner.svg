@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="careersBannerTitle">
+  <title id="careersBannerTitle">Team celebrating together, placeholder</title>
+  <rect width="1400" height="800" fill="#4a3f38"/>
+  <circle cx="700" cy="300" r="260" fill="#e7c877" opacity="0.35"/>
+  <g fill="#6f6259">
+    <circle cx="500" cy="420" r="130"/>
+    <circle cx="700" cy="360" r="150"/>
+    <circle cx="900" cy="420" r="130"/>
+    <circle cx="620" cy="560" r="120"/>
+    <circle cx="780" cy="560" r="120"/>
+  </g>
+  <g fill="#c99a3e" opacity="0.85">
+    <circle cx="500" cy="380" r="46"/>
+    <circle cx="700" cy="310" r="50"/>
+    <circle cx="900" cy="380" r="46"/>
+    <circle cx="620" cy="500" r="42"/>
+    <circle cx="780" cy="500" r="42"/>
+  </g>
+  <text x="700" y="740" text-anchor="middle" font-family="Poppins, sans-serif" font-size="18" fill="#c9c1b9">Team / culture photography — placeholder</text>
+</svg>

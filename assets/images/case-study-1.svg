@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="case1Title">
+  <title id="case1Title">Case study cover, brand campaign</title>
+  <rect width="1200" height="800" fill="#3a352f"/>
+  <rect x="0" y="0" width="1200" height="800" fill="url(#skyline1)"/>
+  <defs>
+    <linearGradient id="skyline1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6f6259"/>
+      <stop offset="100%" stop-color="#2a2622"/>
+    </linearGradient>
+  </defs>
+  <g fill="#4a3f38" opacity="0.9">
+    <rect x="80" y="380" width="90" height="420"/>
+    <rect x="190" y="300" width="90" height="500"/>
+    <rect x="300" y="440" width="90" height="360"/>
+    <rect x="410" y="220" width="90" height="580"/>
+    <rect x="520" y="340" width="90" height="460"/>
+  </g>
+  <circle cx="950" cy="230" r="150" fill="#c99a3e" opacity="0.85"/>
+</svg>

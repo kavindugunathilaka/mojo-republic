@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="servicesBannerTitle">
+  <title id="servicesBannerTitle">Strategy session, placeholder</title>
+  <rect width="1200" height="900" fill="#f4f2f0"/>
+  <circle cx="950" cy="220" r="180" fill="#e7c877"/>
+  <circle cx="220" cy="700" r="220" fill="#e7e3df"/>
+  <rect x="330" y="260" width="560" height="420" rx="24" fill="#4a3f38"/>
+  <g fill="#c99a3e">
+    <circle cx="420" cy="360" r="46"/>
+    <circle cx="540" cy="360" r="46"/>
+    <circle cx="660" cy="360" r="46"/>
+    <circle cx="480" cy="470" r="46"/>
+    <circle cx="600" cy="470" r="46"/>
+    <circle cx="720" cy="470" r="46"/>
+  </g>
+  <text x="600" y="860" text-anchor="middle" font-family="Poppins, sans-serif" font-size="18" fill="#a89c92">Strategy / brainstorm photography — placeholder</text>
+</svg>

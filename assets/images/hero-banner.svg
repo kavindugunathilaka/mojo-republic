@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="heroBannerTitle">
+  <title id="heroBannerTitle">Creative director portrait, placeholder</title>
+  <defs>
+    <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7c877"/>
+      <stop offset="100%" stop-color="#c99a3e"/>
+    </linearGradient>
+    <linearGradient id="heroGradDark" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#4a3f38"/>
+      <stop offset="100%" stop-color="#6f6259"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="#f4f2f0"/>
+  <circle cx="620" cy="230" r="260" fill="#e7e3df"/>
+  <circle cx="400" cy="470" r="300" fill="url(#heroGrad)"/>
+  <g transform="translate(400,470)" fill="url(#heroGradDark)" opacity="0.92">
+    <circle cx="0" cy="-70" r="110"/>
+    <path d="M -220 260 C -220 60 -130 -30 0 -30 C 130 -30 220 60 220 260 Z"/>
+  </g>
+  <g stroke="#fff" stroke-width="6" fill="none" opacity="0.9">
+    <circle cx="400" cy="470" r="300"/>
+  </g>
+  <text x="400" y="960" text-anchor="middle" font-family="Poppins, sans-serif" font-size="18" fill="#a89c92">Editorial portrait — replace with brand photography</text>
+</svg>
